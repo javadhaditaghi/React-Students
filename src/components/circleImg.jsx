@@ -1,8 +1,8 @@
+import './circleImg.css'
 
-
-const CircleImg = () => {
+const CircleImg = (props) => {
     return (
-        
+        <img className="circle-img" src={props.img} alt="avatar_img" />
     )
 
 }
