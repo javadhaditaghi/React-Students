@@ -1,5 +1,6 @@
 import CircleImg from "./circleImg";
 import Top from "./Top";
+import Bottom from "./bottom";
 
 
 const Card = (props) => {
@@ -7,10 +8,7 @@ const Card = (props) => {
     <div className="card">
       <Top name={props.name}
         img={props.img}></Top>
-      <div className="bottom">
-        <p className="info">{props.tel}</p>
-        <p className="info">{props.email}</p>
-      </div>
+      <Bottom tel={props.email} email={props.email} />
     </div>
   );
 };
